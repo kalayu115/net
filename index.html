@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" />
+  <meta name="description" content="A static Netflix-style interface clone for educational purposes." />
+</head>
+<body>
+  <!-- Top nav -->
+  <header class="nav">
+    <div class="nav__content">
+      <a class="nav__logo" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
+      </a>
+      <nav class="nav__links">
+        <a href="#" class="nav__link">Home</a>
+        <a href="#" class="nav__link">TV Shows</a>
+        <a href="#" class="nav__link">Movies</a>
+        <a href="#" class="nav__link">New & Popular</a>
+        <a href="#" class="nav__link">My List</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--signin" href="#">Sign In</a>
+        <a class="btn btn--join" href="#">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image:url('image/bg.webp');">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Unlimited movies, TV shows, and more.</h1>
+      <p class="hero__subtitle">Watch anywhere. Cancel anytime.</p>
+      <form class="hero__cta" action="#" method="get" onsubmit="return false;">
+        <input class="input" type="email" placeholder="Email address" aria-label="Email address" />
+        <button class="btn btn--primary">Get Started</button>
+      </form>
+    </div>
+    <div class="hero__rating">
+      <span class="badge">PG-13</span>
+      <span class="badge">HD</span>
+      <span class="badge">5.1</span>
+    </div>
+  </section>
+
+  <!-- Content rows -->
+  <main class="main">
+    <!-- Row: Trending Now -->
+    <section class="row">
+      <h2 class="row__title">Trending Now</h2>
+      <div class="row__cards">
+        <a class="card" href="#">
+          <img src="image/img1.webp" alt="Guardians of the Galaxy Vol. 3" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img2.webp" alt="Oppenheimer" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img3.webp" alt="Spider-Man: Across the Spider-Verse" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img4.webp" alt="John Wick: Chapter 4" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img5.webp" alt="The Super Mario Bros. Movie" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Row: Top Picks for You -->
+    <section class="row">
+      <h2 class="row__title">Top Picks for You</h2>
+      <div class="row__cards">
+        <a class="card" href="#">
+          <img src="image/img6.webp" alt="Avatar: The Way of Water" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img7.webp" alt="Spider-Man: No Way Home" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img8.webp" alt="Black Panther: Wakanda Forever" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img9.webp" alt="Dune" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <img src="image/img10.webp" alt="The Batman" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Row: Only on Netflix -->
+    <section class="row">
+      <h2 class="row__title">Only on Netflix</h2>
+      <div class="row__cards">
+        <a class="card card--tall" href="#">
+          <img src="image/img11.jpg" alt="Series poster" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card card--tall" href="#">
+          <img src="image/img12.jpg" alt="Series poster" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card card--tall" href="#">
+          <img src="image/img13.jpg" alt="Series poster" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+        <a class="card card--tall" href="#">
+          <img src="image/img14.webp" alt="Series poster" />
+          <div class="card__overlay">
+            <button class="btn btn--mini">Play</button>
+            <button class="btn btn--mini btn--secondary">+ My List</button>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- More reasons to join -->
+  <section class="reasons" aria-labelledby="reasons-heading">
+    <div class="reasons__inner">
+      <h2 id="reasons-heading" class="reasons__title">More reasons to join</h2>
+      <ul class="reasons__list">
+        <li>Unlimited, ad-free streaming on any device.</li>
+        <li>Download and watch offline on mobile devices.</li>
+        <li>Multiple profiles so everyone gets personalized recommendations.</li>
+        <li>High-quality streaming up to 4K on supported plans.</li>
+        <li>Affordable plans with easy upgrades or cancellations.</li>
+        <li>New movies, series and exclusive originals added regularly.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="faq" aria-labelledby="faq-heading">
+    <div class="faq__inner">
+      <h2 id="faq-heading" class="faq__title">Frequently Asked Questions</h2>
+      <div class="faq__items">
+        <details>
+          <summary>How much does Netflix cost?</summary>
+          <p>Pricing varies by country and plan. Choose from Basic, Standard, or Premium plans — you can compare features on the plans page.</p>
+        </details>
+        <details>
+          <summary>Can I cancel anytime?</summary>
+          <p>Yes. You can cancel your membership at any time from your account settings — there are no long-term contracts.</p>
+        </details>
+        <details>
+          <summary>Where can I watch?</summary>
+          <p>Watch on a wide range of devices including phones, tablets, smart TVs, game consoles, and web browsers.</p>
+        </details>
+        <details>
+          <summary>How do I change my plan?</summary>
+          <p>Sign into your account, go to "Account", and select "Change plan" to switch between available options.</p>
+        </details>
+        <details>
+          <summary>Is there a free trial?</summary>
+          <p>Free trial availability depends on local promotions. Check the offers page or sign up to see current deals.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__note">Questions? Contact us.</p>
+      <div class="footer__grid">
+        <a href="#" class="footer__link">FAQ</a>
+        <a href="#" class="footer__link">Investor Relations</a>
+        <a href="#" class="footer__link">Privacy</a>
+        <a href="#" class="footer__link">Speed Test</a>
+        <a href="#" class="footer__link">Help Center</a>
+        <a href="#" class="footer__link">Jobs</a>
+        <a href="#" class="footer__link">Cookie Preferences</a>
+        <a href="#" class="footer__link">Legal Notices</a>
+      </div>
+      <div class="footer__locale">
+        <select aria-label="Select language">
+          <option>English</option>
+          <option>Amharic</option>
+        </select>
+      </div>
+      <p class="footer__legal">Netflix Ethiopia</p>
+    </div>
+  </footer>
+</body>
+</html>
